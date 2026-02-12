@@ -1,0 +1,23 @@
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# PHP / Laravel
+/vendor/
+.env
+.env.*
+.phpunit.result.cache
+/storage/*.key
+/storage/logs/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+
+# Docker
+**/.docker-data/

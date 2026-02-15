@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "FreshMart Platform"
+  },
+  "common": {
+    "ok": "Լավ",
+    "cancel": "Չեղարկել"
+  },
+  "validation": {
+    "required": "Այս դաշտը պարտադիր է"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "FreshMart Platform"
+  },
+  "common": {
+    "ok": "ОК",
+    "cancel": "Отмена"
+  },
+  "validation": {
+    "required": "Это поле обязательно"
+  }
+}

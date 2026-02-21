@@ -40,7 +40,7 @@ http.interceptors.request.use((config) => {
   config.headers = config.headers ?? {};
   (config.headers as any)['X-Request-Id'] = requestId;
 
-  (config.headers as any)['Accept-Language'] = 'en';
+  (config.headers as any)['Accept-Language'] = document.documentElement.lang || 'en';
 
   return config;
 });

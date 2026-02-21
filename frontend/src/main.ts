@@ -4,7 +4,10 @@ import App from './App.vue';
 
 import { router } from '@/app/router';
 import { pinia } from '@/app/store';
-import { i18n } from '@/shared/i18n'
+import { i18n, applyLocale, DEFAULT_LOCALE } from '@/shared/i18n';
+applyLocale(DEFAULT_LOCALE).catch(() => {
+
+});
 
 createApp(App)
   .use(pinia)

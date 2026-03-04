@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "FreshMart Platform"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel"
+  },
+  "validation": {
+    "required": "This field is required"
+  }
+}

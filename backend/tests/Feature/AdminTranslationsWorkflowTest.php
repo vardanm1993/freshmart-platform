@@ -3,7 +3,9 @@
 namespace Tests\Feature;
 
 use App\Models\Translation;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
 class AdminTranslationsWorkflowTest extends TestCase
@@ -12,6 +14,9 @@ class AdminTranslationsWorkflowTest extends TestCase
 
     public function test_admin_can_create_draft_and_approve_it(): void
     {
+        $user = User::factory()->create(['role' => 'reviewer']);
+        Sanctum::actingAs($user);
+
         $res = $this->postJson('/api/admin/i18n/translations', [
             'locale' => 'en',
             'key' => 'app.footer',
